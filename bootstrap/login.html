@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>登陆</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+<!--登陆头部-->
+<nav class="navbar navbar-default navbar-static-top hudaye">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--设置logo的地方-->
+            <a class="navbar-brand" href="#">
+                <img src="imgs/bdqnlogo.jpg" alt="北大青鸟" width="150px">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" >
+                    <a href="index.html" style="background-color: #e7e7e7">返回首页 <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                <li><a href="#" style="font-size: 20px;color: red"  class="one">登录</a></li>
+                <li><a href="registered.html" style="font-size: 20px" class="zhuce">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--登陆-->
+<div class="container denglu" >
+    <div class="row">
+        <!--登陆左边-->
+        <div class="col-md-7  hidden-md" >
+            <a href=""><img src="imgs/loginright.jpg" alt="" width="100%" class="img-rounded img-responsive"></a>
+        </div>
+        <!--登陆右边-->
+        <div class="col-md-5">
+
+            <div class="huiyuandenglu">
+                <h2 class="text-muted" style="margin-top: 20px">会员登陆</h2>
+                <img src="imgs/denglusucai.png" alt="" width="100px" >
+                <h3><input type="text"  placeholder="请输入你的手机号" maxlength="11" id="userName" value=""></h3><span class=""></span>
+                <h3><input type="password" placeholder="密码" value="" style="margin-top: 20px" id="passWord"></h3>
+                <input type="checkbox" style="margin-top: 10px" >记住用户名
+                <a href=""> <span  style=" margin-left: 144px;text-decoration: none;">忘记密码？</span></a>
+
+                <h3><input type="button" class="btn btn-primary btn-lg" value="登录" style="width: 290px;border-radius: 0;background-color:crimson;" id="login"></h3>
+                <a href="" ><h5 class="text-muted" style="margin-right: 145px;margin-top: 54px;text-decoration: none;">还没有账号？立即注册</h5></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<footer class="loginfonnt">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <a href="" >
+                Copyright <span class="glyphicon glyphicon-phone-alt"></span>2018-2028 北大青鸟学院技术团队(www.baidu.com)
+            </a>
+        </div>
+    </nav>
+
+</footer>
+<!--登陆左边-->
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery-1.12.4.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

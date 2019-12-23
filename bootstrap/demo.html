@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+
+</head>
+<body>
+<!--头部-->
+<div id="thead">
+    <!--头部广告部分-->
+    <div class="container-fluid" style="background-color:#444;height: 40px;position: relative">
+        <div class="row" style="background-color:#444;">
+            <div class="col-md11"style="background-color:red;">
+
+            </div>
+            <div class="col-md-1" style="color: #a8a8aa; font-size: 12px;line-height: 40px;position: absolute;left: 1400px">
+                广告
+            </div>
+        </div>
+    </div>
+    <!--头部导航栏部分-->
+    <nav class="navbar navbar-default " style="margin-bottom: 0px">
+            <div class="container-fluid">
+               <div class="row">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                   <div class="container">
+                       <div class="row">
+                           <!--苹果的logo-->
+                           <a class="navbar-brand glyphicon glyphicon-apple" id="logo" href="#"></a>
+                           <div class="collapse navbar-collapse col-md-8 " id="bs-example-navbar-collapse-1">
+
+                               <ul class="nav navbar-nav ">
+
+                                   <li><a href="#" class="head">Mac </a>
+                                   <li><a href="#" class="head">iPad</a>
+                                   <li><a href="#" class="head">iphone </a>
+                                   <li><a href="#" class="head">Watch</a>
+                                   <li><a href="#" class="head">Music</a>
+                                   <li><a href="#" class="head">技术支持</a>
+                                       <!--放大镜-->
+                                   <li><a href="#" class="glyphicon glyphicon-zoom-in head" ></a>
+                                   <!--锁-->
+                                   <li class="dropdown">
+                                       <a href="#" class="dropdown-toggle glyphicon glyphicon-lock" style="color:#ffffff" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                       <ul class="dropdown-menu" style="width: 288px;height: 307px;">
+                                           <li style="margin-top: 20px;text-align: center">您的购物袋是空的
+                                           <li role="separator" class="divider">
+                                           <li><a href="#" class="glyphicon glyphicon-lock">&nbsp;购物袋</a>
+                                           <li role="separator" class="divider">
+                                           <li><a href="#" class="glyphicon glyphicon-heart-empty">&nbsp;收藏</a>
+                                           <li role="separator" class="divider">
+                                           <li><a href="#" class="glyphicon glyphicon-oil">&nbsp;订单</a>
+                                           <li role="separator" class="divider">
+                                           <li><a href="#" class="glyphicon glyphicon-asterisk">&nbsp;账户</a>
+                                           <li role="separator" class="divider">
+                                           <li><a href="#" class="glyphicon glyphicon-user">&nbsp;登陆</a>
+                                       </ul>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+            </div>
+
+    </nav>
+   <!--头部导航栏部分-->
+    <!--<nav class="navbar navbar-default" id="head">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+            <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+                <!--<div class="col-md-1">-->
+                    <!--<div class="navbar-header">-->
+                        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                            <!--<span class="sr-only">Toggle navigation</span>-->
+                            <!--<span class="icon-bar"></span>-->
+                            <!--<span class="icon-bar"></span>-->
+                            <!--<span class="icon-bar"></span>-->
+                        <!--</button>-->
+                        <!--&lt;!&ndash;苹果的logo&ndash;&gt;-->
+                        <!--<a href="" class="navbar-brand glyphicon glyphicon-apple" style="color: #ffffff;"></a>-->
+                     <!--</div>-->
+                <!--</div>-->
+            <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+                <!--<div class="collapse navbar-collapse col-md-8" id="bs-example-navbar-collapse-1 " style="text-align: center">-->
+                    <!--<ul class="nav navbar-nav" style="display: inline-block;float: none">-->
+                        <!--<li><a href="#" class="head">Mac </a></li>-->
+                        <!--<li><a href="#" class="head">iPad</a></li>-->
+                        <!--<li><a href="#" class="head">iphone </a></li>-->
+                        <!--<li><a href="#" class="head">Watch</a></li>-->
+                        <!--<li><a href="#" class="head">Music</a></li>-->
+                        <!--<li><a href="#" class="head">技术支持</a></li>-->
+                        <!--&lt;!&ndash;放大镜&ndash;&gt;-->
+                        <!--<li><a href="#" class="glyphicon glyphicon-zoom-in head" ></a></li>-->
+                        <!--&lt;!&ndash;锁&ndash;&gt;-->
+                        <!--<div class="dropdown col-md-1" id="lock">-->
+                            <!--<li  style="display: inline-block;">-->
+                                <!--<a href="#" class="dropdown-toggle glyphicon glyphicon-lock head" style="color: #fff;line-height: 48px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ></a>-->
+                                <!--<ul class="dropdown-menu" style="width: 288px;height: 307px;">-->
+                                    <!--<li style="margin-top: 20px;text-align: center">您的购物袋是空的</li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#" class="glyphicon glyphicon-lock">&nbsp;购物袋</a></li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#" class="glyphicon glyphicon-heart-empty">&nbsp;收藏</a></li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#" class="glyphicon glyphicon-oil">&nbsp;订单</a></li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#" class="glyphicon glyphicon-asterisk">&nbsp;账户</a></li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#" class="glyphicon glyphicon-user">&nbsp;登陆</a></li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                        <!--</div>-->
+                    <!--</ul>-->
+                 <!--</div >-->
+            <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+    <!--</nav>-->
+</div>
+<!--机 型-->
+<div class="container-fluid" id="iphone">
+    <div class="row" >
+        <div class="col-md-6 col-sm-offset-2" >
+        <ul id="jixing" >
+            <li><a href=""><img src="imgs/iphone_11_pro.svg" alt=""  >
+                <p style="margin-left: -20px">iphone11 por</p>
+                <p style="color: #f56300;font-size: 10px">新款</p></a>
+            </li>
+            <li><a href=""><img src="imgs/iphone11.svg" alt="" >
+                <p style="margin-left: -20px">iphone11</p>
+                <p style="color: #f56300;font-size: 10px">新款</p></a>
+            </li>
+            <li><a href=""><img src="imgs/iphone_xr.svg" alt="" >
+                <p style="margin-left: -20px">iphone XR</p></a></li>
+            <li><a href=""><img src="imgs/iphone_8.svg" alt="" >
+                <p style="margin-left: -10px">iphone8</p></a></li>
+            <li><a href=""><img src="imgs/iphone_com.svg" alt="" >
+                <p>机型比较</p></a></li>
+            <li><a href=""><img src="imgs/iphone_erji.svg" alt="" >
+                <p style="margin-left: -14px">Airpods</p></a></li>
+            <li><a href=""><img src="imgs/iphone_peijian.svg" alt="">
+                <p>配件</p></a>
+            </li>
+            <li><a href=""><img src="imgs/iphone_ios_dark__bb9g9sts3q76_large.svg" alt="" >
+                <p>IOS13</p></a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+<!--iphone11 pro 介绍-->
+<div id="iphone_11_Introduction" style="background-color:#000;">
+    <div class="container-fluid">
+        <div class="row">
+            <!--文字部分-->
+            <div class="col-md-12">
+                <h2 style="color: #fff;text-align: center;margin-top: 85px" >iphone&nbsp11&nbspPro</h2>
+                <h1 style="text-align: center;color: #fff">摄像头、显示屏、性能，</h1>
+                <h1 style="text-align: center;color: #fff;margin-top: 10px">样样&nbspPro&nbsp如其名。</h1>
+                <div style="text-align: center;color: #fff;margin-top: 40px;font-size: 17px">低价换购，仅&nbspRMB&nbsp258/月或&nbspRMB&nbsp6199&nbsp起*。</div>
+                <a href=""><div style="text-align: center;margin-top: 30px">进一步了解&nbsp></div></a>
+                <h5 style="float: left;width: 100%;text-align: center;margin-top: 30px;font-size: 15px">
+                    <a href="" >在线购买</a>
+                    <span style="color: #86868b">并享受免费送货服务。或</span>
+                    <a href="" >预约</a>
+                    <a href="" style="color: #86868b">†</a>
+                    <span style="color: #86868b; ">到&nbspApple&nbspStore&nbsp零售店购买。</span>
+                    <h5 style="float: left; width: 100%;text-align: center;margin-top: 0px">
+                        <div style="color: #86868b;font-size: 16px">某些&nbspiPhone&nbsp11&nbspPro&nbsp机型可以到店内购买
+                            <a href="" style="color: #86868b">††</a>
+                            <span>。</span>
+                        </div>
+                    </h5>
+                </h5>
+                <h5 style="width: 100%;text-align: center;font-size: 16px;color: #86868b;margin-top: 95px">
+                    <div style="margin-top: 10px">如果你加入&nbspiPhone&nbsp年年焕新新计划，请先查询你的升级换购资格，</div>
+                    <div style="margin-top: 9px">然后预约前往&nbspApple&nbspStore&nbsp零售店换购新款&nbspiPhone。</div>
+                </h5>
+                <div style="text-align: center"><a href="" style="font-size: 16px">查询升级换购资格&nbsp></a></div>
+            </div>
+            <div style="text-align: center;margin-left: 200px">
+                <img src="imgs/iphone_11_head.jpg" alt="" class=" img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+<!--iphone11 介绍-->
+<div class="container-fluid" style="margin-top: 160px">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3" >
+            <div class="text" style="text-align: center;text-align: right ">
+                <div  style="text-align: center">
+                    <strong> <h2>iPhone&nbsp11</h2></strong>
+                    <strong> <h1>一切都刚刚好。</h1></strong>
+                    <h5 style="margin-top: 40px">低价换购，仅&nbspRMB&nbsp154/月</h5>
+                    <h5>或&nbspRMB&nbsp3699&nbsp起*。</h5>
+                    <div style="margin-top: 25px">
+                        <a href="" style="font-size: 15px">进一步了解&nbsp></a>
+                    </div>
+                    <div style="margin-top: 25px;font-size: 16px">
+                        <a href="" >在线购买</a>
+                        <span style="color: #86868b;">并享受免费送货服务</span>
+                    </div>
+                    <div style="color: #86868b;font-size: 16px">
+                        <a href="">预约</a>
+                        <a href="" style="color: #86868b">†</a>
+                        <span>到&nbspApple&nbspStore&nbsp零售店</span>
+                        <div>购买。某些&nbspiPhone&nbsp11&nbsp机型可以直</div>
+                        <div>接到店内购买<a href="" style="color: #86868b">††</a></div>
+                    </div>
+                    <div style="margin-top: 25px;color: #86868b;font-size: 16px">
+                        <div>如果你已加入&nbspiPhone&nbsp年年焕新</div>
+                        <div>计划，请先查询你的升级换购资格，</div>
+                        <div>然后预约前往&nbsoApple&nbsoStore</div>
+                        <div style="padding-bottom: 10px">零售店换购新款&nbspiPhone。</div>
+                        <a href="" >查询升级换购资格&nbsp></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="imgs/hero_iphone11__cuduq393pp8i_large.jpg"class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+<!--iphone11和iphone11pro的比较-->
+<div class="container" style="margin-top: 130px">
+    <div class="row" style="background-color:#FAFAFA;padding-top: 30px">
+        <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1" id="Comparison" style="margin-top: 52px" >
+
+            <h1 >选择&nbspiPhone&nbsp11?</h1>
+            <h1 style="margin-top: 0px">还是选择&nbspiPhone&nbsp11&nbspPro？</h1>
+            <a href="" style="font-size: 16px">快速对比他们的不同&nbsp></a>
+        </div>
+        <div class="col-md-6 "style="background-color:#FAFAFA;">
+
+            <img src="imgs/compare_family__fbsuhz3gvqai_large.jpg"class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+<!--价格比较-->
+<div class="container-fluid"id="price" style="background-color: #f2f2f2;padding-top: 95px;margin-top: 30px">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 style="text-align: center">哪款&nbspiPhone&nbsp适合你？</h1>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 col-sm-6  col-xs-6 ">
+                    <img src="imgs/compare_iphone_11_pro__fvqwhr4dkhiu_large.jpg" alt="">
+                    <h3>iPhone&nbsp11&nbspPro</h3>
+                    <p>RMB&nbsp8699&nbsp起</p>
+                    <ul >
+                        <li>全新三摄系统<br>
+                            (超广角、广角、长焦)</li>
+                        <li>视频播放最长可达 20 小时1</li>
+                        <li>具备抗水性能，最多可在 4 米水深停<br>留 30 分钟2</li>
+                        <li>5.8 英寸或 6.5 英寸<br>
+                            超视网膜 XDR 显示屏3</li>
+                    </ul>
+                    <div>
+                        <input type="button" value="购买" ><br>
+                        <a href=""><span>进一步了解&nbsp></span></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <img src="imgs/compare_iphone_11__f0r1z5etd722_large.jpg" alt="">
+                    <h3>iPhone&nbsp11</h3>
+                    <p>RMB&nbsp5499&nbsp起</p>
+                    <ul >
+                        <li>全新双摄系统<br>
+                            (超广角、广角)</li>
+                        <li>视频播放最长可达 17 小时1</li>
+                        <li>具备抗水性能，最多可在 2 米水深停<br>留 30 分钟2</li>
+                        <li>6.1 英寸<br>
+                            Liquid 视网膜高清显示屏3</li>
+                    </ul>
+                    <div>
+                        <input type="button" value="购买" ><br>
+                        <a href=""><span>进一步了解&nbsp></span></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6  col-xs-6 ">
+                    <img src="imgs/compare_iphone_xr__dexbg7jerlqq_large.jpg" alt="">
+                    <h3>iPhone X R</h3>
+                    <p>RMB&nbsp4799&nbsp起</p>
+                    <ul >
+                        <li>单摄系统<br>
+                            (广角)</li>
+                        <li>视频播放最长可达 16 小时1</li>
+                        <li>具备抗水性能，最多可在 1 米水深停<br>留 30 分钟2</li>
+                        <li>6.1 英寸<br>
+                            Liquid 视网膜高清显示屏3</li>
+                    </ul>
+                    <div>
+                        <input type="button" value="购买" ><br>
+                        <a href=""><span>进一步了解&nbsp></span></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <img src="imgs/compare_iphone_8__fjto7zt8ldym_large.jpg" alt="">
+                <h3>iPhone 8</h3>
+                <p>RMB&nbsp3499&nbsp起</p>
+                <ul >
+                    <li>单摄系统(广角)<br>
+                        或双摄系统 (广角、长焦)</li>
+                    <li>视频播放最长可达 14 小时1</li>
+                    <li>具备抗水性能，最多可在 1 米水深停<br>留 30 分钟2</li>
+                    <li>4.7 英寸或 5.5 英寸<br>
+                        Liquid 视网膜高清显示屏3</li>
+                </ul>
+                <div >
+                    <input type="button" value="购买" ><br>
+                    <a href=""><span>进一步了解&nbsp></span></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--比较手机-->
+<div class="container-fluid" style="background-color:#f2f2f2;">
+    <div class="row">
+        <h3 style="text-align: center;margin-top: 100px"><a href="">比较各款 iPhone 机型 ></a></h3>
+        <div class=" col-md-4 col-md-offset-2" style="text-align: center">
+
+                <div class="thumbnail" style="margin-bottom: 0px;border: none">
+                    <h2 style="margin-top: 70px">换购新 iPhone，享受最</h2>
+                    <h2>高达 RMB 5160 的折抵</h2>
+                    <h2>优惠。</h2>
+                    <p>通过 Apple Trade In 换购计划，你可以用符合条件的智</p>
+                    <p>能手机来以旧换新，在购买新 iPhone 时享受折抵</p>
+                    <p>优惠**。这样一来，你受益，地球也受益。</p>
+                    <div><a href="">进一步了解 ></a></div>
+                <img src="imgs/giveback__eeril6qn6wsy_large.jpg" style="margin-top: 82px;overflow: hidden" alt="" >
+                </div>
+
+            </div>
+        <div class=" col-md-4" style="text-align: center;">
+            <div class="thumbnail">
+                <h2 style="margin-top: 70px">升级到新款</h2>
+                <h2>iPhone，轻轻松松。</h2>
+                <p>加入 iPhone 年年焕新计划，每年获取新</p>
+                <p>iPhone，享受 AppleCare+ 服务计划，还可选</p>
+                <p>择分期付款***。</p>
+                <div><a href="">进一步了解 ></a></div>
+                <h2>&nbsp</h2>
+                <h2>&nbsp</h2>
+                <img src="imgs/iphone_upgrade__xfm3lc1ma2a2_large.jpg" style="margin-top: 81px;overflow: hidden" alt="" >
+            </div>
+        </div>
+        </div>
+            </div>
+<!--App购买优惠-->
+<div class="container-fluid" style="background-color:#f2f2f2;"id="offer">
+    <div class="row" >
+        <div style="text-align: center;margin-top: 62px">
+            <h3>在 Apple 购买，好处多多。</h3>
+            <h4>有任何关于运营商、付款方式或 iPhone 上的问题，</h4>
+            <h4>尽管问。</h4>
+            <div><a href="">进一步了解 ></a></div>
+            <h1 style="font-size: 56px;margin-bottom: 70px;margin-top: 200px"><strong>推荐配件</strong></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="margin-right: -20px;">
+                    <div class="thumbnail" style="padding-bottom: 80px;">
+                        <img src="imgs/accessories_case_leather__doswt5117h0m_large.jpg" alt="..." style="margin-top: 70px">
+                        <div class="caption">
+                            <div style="text-align: center;margin-top: 50px;color: #bf4800;margin-bottom: 20px">新款</div>
+                            <div style="text-align: center">
+                            <a href="">iPhone 11 Pro</a><br>
+                            <a href="">皮革保护壳</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-4" style="margin-right: -20px">
+                    <div class="thumbnail" style="padding-bottom: 100px;" >
+                        <img src="imgs/accessories_case_silicone__bds3r3hugp7m_large.jpg" alt="..."style="margin-top: 70px">
+                        <div class="caption">
+                            <div style="text-align: center;margin-top: 50px;color: #bf4800;margin-bottom: 20px">新款</div>
+                            <div style="text-align: center">
+                                <a href="">iPhone 11 硅胶保护壳</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="margin-right: -30px">
+                    <div class="thumbnail" style="padding-bottom: 100px;">
+                        <img src="imgs/airpods_pro__bvzibrheofau_large.jpg" alt="..." style="margin-top: 70px">
+                        <div class="caption">
+                            <div style="text-align: center;margin-top: 50px;color: #bf4800;margin-bottom: 20px">新款</div>
+                            <div style="text-align: center">
+                                <a href="">AirPods Pro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <div style="text-align: center;font-size: 20px;padding-bottom: 90px"><a href="">选购各种 iphone 配件 ></a></div>
+</div>
+<!--选购各种iphone配饰-->
+<div class="container-fluid">
+    <div class="row" style="background-color:#fbfbfb;">
+        <div class="col-md-3 col-md-offset-3" style="text-align: center">
+            <img src="imgs/logo_apple_watch_series_5__f63pu4leugia_large.png" style="margin-top: 160px;text-align: center" alt="">
+            <p style="font-size: 34px;margin-top: 30px">这块表，好不一样。</p>
+            <div><input type="button" value="购买" style="background-color:#0071e3;margin-top: 15px; color: #ffffff;border-radius: 20px;border: 0;width: 63px;height: 36px"></div>
+            <div style="font-size: 18px;margin-top: 20px"><a href="">进一步了解 ></a></div>
+        </div>
+        <div class="col-md-5">
+            <img src="imgs/apple_watch__d9blthuk62s2_large.jpg"style="margin-top: 70px" alt="">
+        </div>
+    </div>
+</div>
+<!--免费送货。分期付款。个性化设置-->
+<div id="delivery">
+    <div class="container" >
+        <div class="row" style="margin-top: 80px">
+            <div class="col-md-4 col-sm-6 ">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/icon_delivery__f5j4959bacae_large.png" alt="...">
+                </a>
+                <div style="text-align: center;font-size: 18px">
+                    <p>免费送货</p>
+                    <p >享受免费送货上门服务，还可在结账时查看</p>
+                    <p>送达日期。</p>
+                    <div><a href="">进一步了解 ></a></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/icon_financing__bgh0sv2ezt8i_large.png" alt="...">
+                </a>
+                <div style="text-align: center;font-size: 18px">
+                    <p>分期付款</p>
+                    <p>符合条件的信用卡用户可选择</p>
+                    <p>灵活的分期付款方式</p>
+                    <div><a href="">进一步了解 ></a></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/icon_personal_setup__behxb3rrvitu_large.png" alt="...">
+                </a>
+                <div style="text-align: center;font-size: 18px">
+                    <p style="color: #1d1d1f;">个性化设置</p>
+                    <p  >我们会通过在线演示或店内讲解，帮你充分</p>
+                    <p>了解新 iPhone 的各种精彩功能。</p>
+                    <div><a href="">进一步了解 ></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--为什么iphone就是那么不一样-->
+<div style="background-color:#f2f2f2;padding-top: 145px" class="different">
+    <div class="container">
+        <strong><h1 style="text-align: center">为什么 iPhone 就是那么不一样？</h1></strong>
+        <div class="row">
+            <div class="col-md-12 colxs-12 img-responsive" style=" background-image: url(imgs/ios13__c80q5yjmf78m_large.jpg);">
+               <div  class="text">
+                   <h3 >iOS 13</h3>
+                   <h2 >新出风格，新出境界。</h2>
+                   <div style="font-size: 18px"><a href="" style="color:#fff">进一步了解 ></a></div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="background-color:#f2f2f2;">
+            <div class="col-md-6" style=";margin-top: 30px;" >
+                    <div class="thumbnail" style="background-color:#000;border: none;margin-bottom: 0;padding: 0;margin-right: 10px">
+                        <div class="caption" style="text-align: center;color: #fff">
+                            <h1 style="margin-top: 64px">iPhone 独到之处</h1>
+                            <p style="font-size: 18px">iPhone 就是那么不一样。</p>
+                            <div style="font-size: 18px;margin-bottom: 70px"><a href="">进一步了解 ></a></div>
+                        </div>
+                        <img src="imgs/only_iphone__obkff2okunem_large.jpg" alt="...">
+            </div>
+        </div>
+            <div class="col-md-6" style="margin-top: 30px;" >
+                <div class="thumbnail" style="background-color:#000;border: none;margin-bottom: 0;padding: 0">
+                    <div class="caption" style="text-align: center;color: #fff">
+                        <h1 style="margin-top: 64px">iPhone 独到之处</h1>
+                        <p style="font-size: 18px">iPhone 就是那么不一样。</p>
+                        <div style="font-size: 18px;margin-bottom: 47px"><a href="">进一步了解 ></a></div>
+                    </div>
+                    <img src="imgs/why_switch__dhglobd93hqq_large.jpg" alt="..." style="margin: 0 auto">
+                </div>
+            </div>
+        </div>
+        <!--隐私-->
+        <div class="row"style="background-color:#000;margin-top: 30px">
+            <div class="col-md-4 col-md-offset-2" style="text-align: center" >
+                <h1 style="color: #fff;margin-top: 200px">隐私</h1>
+                <div style="font-size: 18px;margin-top: 20px"><a href="">进一步了解Apple 及隐私政策 ></a></div>
+            </div>
+            <div class="col-md-6">
+                <img src="imgs/privacy__176qczzy02ai_large.jpg" class="img-responsive" alt="" style="margin: 0 auto">
+            </div>
+        </div>
+    </div>
+</div>
+<!--尽享iphone的精彩-->
+<div style="background-color:#f2f2f2;padding-top: 145px" class="different">
+    <div class="container" >
+        <strong><h1 style="text-align: center">尽享 iPhone 的精彩。</h1></strong>
+        <div class="row" style="background: linear-gradient(-25deg, #d253b1, #fb6f4a);margin-top: 85px">
+            <div class="col-md-6" style="color: #fff;text-align: center">
+                <img src="imgs/apple_music_logo__dvipaf20ql8i_large.png" style="margin-top: 170px" alt="">
+                <h3>上千万首歌曲，三个月免费聆听。</h3>
+                <div style="font-size: 18px"><a href="" style="color: #fff">开始试用 &nbsp &nbsp &nbsp &nbsp &nbsp进一步了解 ></a></div>
+            </div>
+            <div class="col-md-6">
+                <img src="imgs/apple_music__dukr9h4bvfqu_large.png" style="margin-top: 135px" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="background-color: #000;margin-top: 30px;" >
+                <div class="thumbnail" style="background-color:#000;border: none;margin-bottom: 0;padding: 0">
+                    <img src="imgs/thats_iphone__d4ojsfbp8paq_large.jpg" alt="..." style="margin-top: 35px">
+                    <div class="caption" style="text-align: center;color: #fff">
+                        <h1 style="margin-top: 64px">这很 iPhone。</h1>
+                        <div style="font-size: 18px;margin-bottom: 70px"><a href="">来看看iphone的各种本领 ></a></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6" style=";margin-top: 30px;" >
+                <div class="thumbnail img-responsive" style="background-color:#000;border: none;margin-bottom: 0;padding: 0">
+                    <div style="background-image: url(imgs/shot_on_iphone__fjwoocpis3e6_large.jpg);width: 572px;height:635px; color: #fff;text-align: center">
+                        <div style="font-size: 42px;padding-top: 64px">使用 iPhone 拍摄的窍门</div>
+                        <div style="font-size: 18px;margin-top: 20px">我们相信每个人都能拍出好照片。来学习一些拍摄</div>
+                        <div style="font-size: 18px">技巧和技能，让你拍出的照片更精彩。</div>
+                        <div style="margin-top: 20px"><a href="">进一步了解 ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--尾部的废话-->
+<div>
+    <div class="container">
+        <div class="row" style="border-bottom: 1px solid #d2d2d7">
+
+            <ul class="col-md-9 col-md-offset-1" style="font-size: 10px;margin-top: 45px;list-style: none" >
+                <li>* 所示的 iPhone 11 Pro 64GB 机型价格是使用 iPhone X 64GB 机型进行折抵换购的价格。
+                    所示的 iPhone 11 64GB 机型价格是使用 iPhone 8 Plus 64GB 机型进行折抵换购的价格。
+                    上述所示分期付款金额仅为折抵换购后使用特定期数免息分期付款估算得出的示例（仅显示整
+                    数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。银行和花呗的免
+                    息分期期数可能有所不同。折抵服务的购新价格仅可在限定时间内使用，并且要求用于购买新款
+                    iPhone，以限制条款为准。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区
+                    。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信
+                    用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。A
+                    pple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享
+                    受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要
+                    求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能
+                    与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击此处。</li>
+                <li>** 实际折抵金额取决于你用来折抵的智能手机的状况和型号。年满 18 周岁及以上者才可参与本计划。
+                    该服务可能仅在部分 Apple Store 零售店提供，并且仅限于部分符合条件的设备。Apple 或其折抵服务
+                    合作伙伴保留出于任何原因拒绝或限制任何设备 (及其数量) 的权利。店内折抵需出示政府颁发并附有
+                    照片的有效身份证件 (当地法律可能会要求存储该信息)。现有设备的折抵金额可用于冲抵购买新的 A
+                    pple 设备。其他条款请参见 apple.com/cn/trade-in。</li>
+                <li>*** 只有符合 Apple 指定条件的 iPhone 才可参与本计划。</li>
+            </ul>
+            <ol class="col-md-9 col-md-offset-1" style="font-size: 10px;">
+                <li>
+                    所有电池性能信息取决于网络设置和许多其他因素，实际结果可能有所不同。电池充电周期次数有限，
+                    最终可能需由 Apple 服务提供商更换。电池续航时间和充电周期次数依使用和设置情况的不同而可能
+                    有所差异。详情请参阅 apple.com/cn/batteries 和 apple.com/cn/iphone/battery.html。
+                </li>
+                <li>
+                    Phone 8、iPhone 8 Plus、iPhone XR、iPhone 11 Pro、iPhone 11 Pro Max、iPhone 11 可防溅、
+                    抗水、防尘，在受控实验室条件下经测试，iPhone 11 Pro 和 iPhone 11 Pro Max 效果在 IEC 60
+                    529 标准下达到 IP68 级别 (在最深 4 米的水下停留时间最长可达 30 分钟)，iPhone 11 效果在
+                    IEC 60529 标准下达到 IP68 级别 (在最深 2 米的水下停留时间最长可达 30 分钟)，iPhone 8、
+                    iPhone 8 Plus 和 iPhone XR 效果在 IEC 60529 标准下达到 IP67 级别 (在最深 1 米的水下停留
+                    时间最长可达 30 分钟)。防溅、抗水、防尘功能并非永久有效，防护性能可能会因日常磨损而下降
+                    。请勿为潮湿状态下的 iPhone 充电；请参阅使用手册了解清洁和干燥说明。由于浸入液体而导致
+                    的损坏不在保修范围之内。
+                </li>
+                <li>
+                    显示屏采用曲线优美的圆角设计，四个圆角位于一个标准矩形内。按照标准矩形测量时，屏幕的对
+                    角线长度是 5.85 英寸 (iPhone 11 Pro)、6.46 英寸 (iPhone 11 Pro Max) 或 6.06 英寸 (iPho
+                    ne 11、iPhone XR)。实际可视区域较小。
+                </li>
+                <li>
+                    免费试用期结束后，每月收费 RMB 10。无需合约。当试用期结束后，会员方案将按月自动续订，
+                    直至取消订阅。
+                </li>
+            </ol>
+            <ul class="col-md-9 col-md-offset-1" style="font-size: 10px;list-style: none">
+                <li>† 每位顾客的总预约次数可能会有限制。如果 Apple 认为顾客提供了误导性或欺诈性信息和/或滥用
+                    、破坏或试图规避预约购买系统，Apple 有权拒绝、限制或取消此预约购买。</li>
+                <li>†† 库存数量可能有限。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--合作伙伴、-->
+<div id="cooperation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-1">
+                <div class="glyphicon glyphicon-apple"> > iphone </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1" >
+                    <div>选购及了解
+                        <span>+</span>
+                    </div>
+                    <ul>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">HomePad</a></li>
+                        <li><a href="">iPod touch</a></li>
+                        <li><a href="">配件</a></li>
+                        <li><a href="">App Store  充值卡</a></li>
+                    </ul>
+                </div>
+            <div class="col-md-2" >
+                <div >服务
+                    <span>+</span>
+                </div>
+                <ul>
+                    <li><a href="">Apple Music</a></li>
+                    <li><a href="">iCloud</a></li>
+                    <li><a href="">账户</a></li>
+                    <li><a href="">管理你的 Apple ID</a></li>
+                    <li><a href="">Apple Store 账户</a></li>
+                    <li><a href="">iCloud.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2" >
+                <div>Apple Store 商店
+                    <span>+</span>
+                </div>
+                <ul>
+                    <li><a href="">查找零售店</a></li>
+                    <li><a href="">Genius Bar 天才吧</a></li>
+                    <li><a href="">Today at Apple</a></li>
+                    <li><a href="">Apple 夏令营</a></li>
+                    <li><a href="">Field Trip 课外活动</a></li>
+                    <li><a href="">Apple Store App</a></li>
+                    <li><a href="">翻新和优惠</a></li>
+                    <li><a href="">分期付款</a></li>
+                    <li><a href="">Apple Trade In 换购计划</a></li>
+                    <li><a href="">订单状态</a></li>
+                    <li><a href="">选购帮助</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2" >
+                <div>商务应用
+                    <span>+</span>
+                </div>
+                <ul>
+                    <li><a href="">Apple 与商务</a></li>
+                    <li><a href="">商务选购</a></li>
+                    <li><a href="">教育应用</a></li>
+                    <li><a href="">Apple 与教育</a></li>
+                    <li><a href="">高校师生选购</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2" >
+                <div>Apple 价值观
+                    <span>+</span>
+                </div>
+                <ul>
+                    <li><a href="">辅助功能</a></li>
+                    <li><a href="">环境责任</a></li>
+                    <li><a href="">隐私</a></li>
+                    <li><a href="">供应商责任</a></li>
+                    <li><a href="">关于 Apple</a></li>
+                    <li><a href="">Newsroom</a></li>
+                    <li><a href="">Apple 管理层</a></li>
+                    <li><a href="">工作机会</a></li>
+                    <li><a href="">创造就业</a></li>
+                    <li><a href="">活动</a></li>
+                    <li><a href="">联系 Apple</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery-1.12.4.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/demo.js"></script>
+</body>
+</html>

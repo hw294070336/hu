@@ -1,0 +1,274 @@
+/********************************通用样式设置************************************/
+body{
+    color: #000;
+}
+.btn-register {
+    color: #ffffff;
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #ffffff;
+    background-color: #08D6F2;
+    border-color: #F4F7F7;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #0AB4F7;
+    border-color: #F4F7F7;
+}
+
+.btn-register .badge {
+    color: #0AB4F7;
+    background-color: #ffffff;
+}
+/********************************通用样式设置************************************/
+/********************************头部样式设置************************************/
+header{
+
+}
+header  .top-bar{
+    height: 40px;
+    border-bottom:1px solid #e0e0e0;
+    line-height: 39px;
+}
+/*选择row类下面的第一个div以外的div*/
+header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+/*设置二维码的位置*/
+header .top-bar .container .row .top-bar-1 a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -12px;
+    /*设置层级让他优先显示不会被下面的内容遮住*/
+    z-index: 9999;
+}
+header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+header .hudaye{
+    margin-bottom: 0;
+}
+header .hudaye .navbar-brand{
+    height: 100px;
+    padding: 10px 15px;
+}
+header .hudaye .navbar-nav a{
+    height: 100px;
+    line-height: 70px;
+}
+/*选择li下的a标签并且给a绑定事件。鼠标移上去的时候。下边框显示2px。有条横线*/
+header .hudaye .navbar-nav li.active a,
+header .hudaye .navbar-nav li a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #0AB4F7;
+}
+header .hudaye .navbar-toggle{
+    margin-top: 36px;
+}
+/********************************头部样式设置************************************/
+
+/********************************轮播图样式设置************************************/
+
+#wei {
+
+}
+#wei .item{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+@media screen and (min-width: 800px){
+    #wei .item{
+        /*设置图片大图的高度。图片是多高就设置多高*/
+        height: 531px;
+    }
+}
+/********************************轮播图样式设置************************************/
+
+
+/********************************关于我们样式设置************************************/
+#wei1{
+    padding: 20px 0;
+}
+/*设置五角星样式居中*/
+#wei1 .title{
+    display: flex;
+    /*伸缩布局 column为竖轴*/
+    flex-direction: column;
+    /*主轴居中*/
+    justify-content: center;
+    /*侧轴居中*/
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+/********************************关于我们样式设置************************************/
+
+/********************************产品特色样式设置************************************/
+#wei2{
+    background-color: #f0f0f0;
+    padding: 30px;
+
+}
+#wei2 .nav{
+    font-size: 18px;
+}
+#wei2 .nav a{
+    color: #999999;
+}
+#wei2 .nav li.active a{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+    color: #0f0f0f;
+}
+#one2{
+    background-color: transparent;
+}
+/********************************产品特色样式设置************************************/
+
+/********************************热门课程样式设置************************************/
+
+#wei3{
+    padding: 20px 0;
+}
+#wei3 .title{
+    display: flex;
+    /*伸缩布局 column为竖轴*/
+    flex-direction: column;
+    /*主轴居中*/
+    justify-content: center;
+    /*侧轴居中*/
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+#wei3 .teacher{
+    padding: 15px 10px;
+}
+#wei3 .media-left{
+    width: 20%;
+}
+#wei3 .media-body{
+    width: 60%;
+    /*文字对于图片居中*/
+    vertical-align: middle;
+}
+#wei3 .media-right{
+    width: 20%;
+    vertical-align: middle;
+    font-size: 16px;
+}
+/********************************热门课程样式设置************************************/
+
+/********************************友情链接样式设置************************************/
+#wei4{
+    padding: 20px 0;
+}
+#wei4 .title{
+    display: flex;
+    /*伸缩布局 column为竖轴*/
+    flex-direction: column;
+    /*主轴居中*/
+    justify-content: center;
+    /*侧轴居中*/
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+#wei4 .logo{
+    list-style: none;
+    text-align: center;
+
+}
+#wei4 .logo li{
+    /*行内快捷标签 */
+    display: inline-block;
+    padding: 20px 49px;
+}
+/********************************友情链接样式设置************************************/
+
+/********************************尾部样式设置************************************/
+#wei5{
+    width: 100%;
+    height: 200px;
+    background: url("../imgs/008.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 16px;
+}
+#wei5 .col-md-6 ul {
+    list-style: none;
+}
+#wei5 .one,#wei5 .tow{
+    padding: 10px;
+    border-right: 1px solid #fff;
+    height: 180px;
+    /*伸缩布局*/
+    /*让其居中。基于图片居中*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wei5 .one{
+    line-height: 40px;
+}
+#wei5 .one a{
+    color: #666;
+}
+#wei5 .three{
+    padding: 10px 50px;
+    height: 180px;
+    /*伸缩布局*/
+    /*让其居中。基于图片居中*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+#wei5 .three a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+#wei5 .three a img{
+    margin-right: 15px;
+    text-decoration: none;
+}
+/********************************尾部样式设置************************************/

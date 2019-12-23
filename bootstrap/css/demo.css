@@ -1,0 +1,223 @@
+/*****************************************全局*******************************************/
+a:hover{
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: left!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    body #thead .collapse .navbar-nav li{
+        margin-left: 0;
+    }
+}
+/*****************************************全局*******************************************/
+
+
+/*****************************************头部*******************************************/
+#head{
+    position: relative;
+}
+/*媒体查询。让屏幕宽度小于1200的时候。苹果的logo就居中显示*/
+@media screen and (max-width: 1200px){
+    #logo{
+        position: absolute;
+        left: 50%;
+    }
+}
+.dropdown col-md-1{
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    #Comparison{
+        font-size:18px ;
+    }
+}
+@media screen and (max-width: 992px){
+    #different .text{
+        padding-top: 165px;
+    }
+}
+/*设置隐藏的时候button的位置的。设置在左边*/
+#thead .navbar-header .navbar-toggle{
+    float: left;
+}
+#thead .navbar{
+    border: none;
+    background-color: #1D1D1F;
+    border-radius: 0px;
+}
+
+#thead .collapse .navbar-nav li{
+    margin-left: 58px;
+}
+#thead .collapse .navbar-nav li .head{
+    color: #fff;
+}
+/*#thead .navbar-header .navbar-brand{*/
+    /*display: block !important;*/
+/*}*/
+/*#thead #head{*/
+    /*margin-bottom: 0;*/
+/*}*/
+/*****************************************头部*******************************************/
+
+/*****************************************机型*******************************************/
+#iphone{
+    background: rgba(29,29,31,0.6);
+    padding-bottom: 0px;
+    background-color: #333;
+}
+
+#iphone #jixing{
+    width: 100%;
+    float: left;
+    margin: 0 220px;
+}
+#iphone #jixing li{
+    list-style: none;
+    float: left;
+    margin: 0 24px;
+}
+#iphone #jixing  li a{
+    color: #fff;
+}
+#iphone #jixing  li img{
+   height: 54px;
+}
+#iphone #jixing li p{
+    font-size: 16px;
+    /*margin-right: 5px;*/
+}
+/*****************************************机型*******************************************/
+
+/*****************************************价格*******************************************/
+#price ul{
+    padding: 0;
+}
+#price ul li{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 12px;
+}
+#price input{
+    margin-top: 14px;
+    background-color:#0071e3;
+    border-radius: 20px;
+    width: 45px;
+    height: 24px;
+    color: #fff;
+    border: 0;
+    font-size: 12px;
+}
+
+
+#price span{
+    padding-top: 30px;
+
+}
+/*****************************************价格*******************************************/
+
+/*****************************************App购买优惠*******************************************/
+
+#offer > div{
+    padding-top: 55px;
+}
+#offer .container .thumbnail{
+    border: none;
+    margin-bottom: 0px;
+}
+/*****************************************App购买优惠*******************************************/
+
+/*****************************************免费送货*******************************************/
+#delivery{
+    background-color: #f2f2f2;
+}
+#delivery .thumbnail{
+    border: none;
+    background-color: #f2f2f2;
+}
+/*****************************************免费送货*******************************************/
+
+/*****************************************为什么iPhone就是不一样*******************************************/
+.different .col-md-12{
+   width: 100%;
+    height: 500px;
+    margin-top: 85px;
+}
+.different .col-md-12 .text{
+   text-align: center;
+    color: #ffffff;
+    margin-top: 195px;
+
+}
+.different .thumbnail > img, .thumbnail a > img {
+    margin-right: 0;
+}
+@media (min-width: 992px){
+    #different .col-md-6{
+        padding-right: 0px;
+    }
+}
+/*****************************************为什么iPhone就是不一样*******************************************/
+
+/*****************************************尾部合作广告*******************************************/
+#cooperation li{
+    list-style: none;
+}
+#cooperation li a{
+    color: #515154;
+    font-size: 12px;
+}
+#cooperation ul{
+    padding: 0;
+}
+
+#cooperation .col-md-2 div span{
+    float: right;
+    display: none;
+}
+
+@media screen and (max-width: 974px){
+    #cooperation .col-md-2 ul{
+        display: none;
+    }
+    #cooperation .col-md-2 div{
+        cursor: pointer;
+    }
+    #cooperation .col-md-2 div span{
+        display: block;
+    }
+}
+/*****************************************尾部合作广告*******************************************/
